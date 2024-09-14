@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Price Rounder",
+    "version": "1.0",
+    "description": "Rounds up Amazon prices to the nearest whole number and displays the original price, helping users see beyond marketing tactics.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.amazon.com/*", "*://*.amazon.fr/*", "*://*.amazon.de/*", "*://*.amazon.co.uk/*", "*://*.amazon.it/*", "*://*.amazon.es/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
